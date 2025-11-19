@@ -1,0 +1,14 @@
+C:\Users\rawi1\kolkoikrzyzyk\bin\Debug\net9.0\kolkoikrzyzyk.exe
+C:\Users\rawi1\kolkoikrzyzyk\bin\Debug\net9.0\kolkoikrzyzyk.deps.json
+C:\Users\rawi1\kolkoikrzyzyk\bin\Debug\net9.0\kolkoikrzyzyk.runtimeconfig.json
+C:\Users\rawi1\kolkoikrzyzyk\bin\Debug\net9.0\kolkoikrzyzyk.dll
+C:\Users\rawi1\kolkoikrzyzyk\bin\Debug\net9.0\kolkoikrzyzyk.pdb
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.AssemblyInfoInputs.cache
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.AssemblyInfo.cs
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.csproj.CoreCompileInputs.cache
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.dll
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\refint\kolkoikrzyzyk.dll
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.pdb
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\kolkoikrzyzyk.genruntimeconfig.cache
+C:\Users\rawi1\kolkoikrzyzyk\obj\Debug\net9.0\ref\kolkoikrzyzyk.dll
