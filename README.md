@@ -48,7 +48,7 @@ cd TicTacToe-Minimax-CSharp
 Run the project:
 
 ```bash
-dotnet run --project Tic-tac-toe/kolkoikrzyzyk.csproj
+dotnet run --project Tic-tac-toe/Tic-tac-toe.csproj
 ```
 
 ## Gameplay
@@ -57,9 +57,9 @@ After starting the application:
 
 1. Choose the board size: `3` or `4`.
 2. Choose the difficulty level:
-   - `latwy`
-   - `sredni`
-   - `trudny`
+   - `easy`
+   - `medium`
+   - `hard`
 3. Select a numbered field to place your `X`.
 4. The AI plays as `O`.
 
@@ -76,4 +76,3 @@ Example 3x3 board:
 ## Author
 
 Radosław Witkowski
-
