@@ -1,5 +1,3 @@
-# Tic Tac Toe with Minimax (C# / .NET)
-
 # Tic Tac Toe with Minimax AI
 
 Console-based Tic Tac Toe game written in C# and .NET.
@@ -45,4 +43,37 @@ Clone the repository:
 ```bash
 git clone https://github.com/radoslaw-witkowski/TicTacToe-Minimax-CSharp.git
 cd TicTacToe-Minimax-CSharp
+```
+
+Run the project:
+
+```bash
+dotnet run --project Tic-tac-toe/kolkoikrzyzyk.csproj
+```
+
+## Gameplay
+
+After starting the application:
+
+1. Choose the board size: `3` or `4`.
+2. Choose the difficulty level:
+   - `latwy`
+   - `sredni`
+   - `trudny`
+3. Select a numbered field to place your `X`.
+4. The AI plays as `O`.
+
+Example 3x3 board:
+
+```text
+  1 |  2 |  3
+--------------
+  4 |  5 |  6
+--------------
+  7 |  8 |  9
+```
+
+## Author
+
+Radosław Witkowski
 
