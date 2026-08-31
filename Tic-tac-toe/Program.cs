@@ -14,13 +14,13 @@ class TicTacToe
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-        Console.WriteLine("Witaj w grze Kółko i Krzyżyk!");
-        Console.WriteLine("Wybierz rozmiar planszy: 3 lub 4");
+        Console.WriteLine("Welcome to Tic Tac Toe!");
+        Console.WriteLine("Choose the board size: 3 or 4");
 
         while (!int.TryParse(Console.ReadLine(), out boardSize)
                || (boardSize != 3 && boardSize != 4))
         {
-            Console.WriteLine("Niepoprawny wybór. Wpisz 3 lub 4:");
+            Console.WriteLine("Invalid choice. Enter 3 or 4:");
         }
 
         ReadDifficulty();
@@ -46,20 +46,20 @@ class TicTacToe
     {
         while (true)
         {
-            Console.WriteLine("Wybierz poziom trudności: latwy, sredni, trudny");
+            Console.WriteLine("Choose difficulty: easy, medium, hard");
 
             difficulty = (Console.ReadLine() ?? "")
                 .Trim()
                 .ToLowerInvariant();
 
-            if (difficulty == "latwy"
-                || difficulty == "sredni"
-                || difficulty == "trudny")
+            if (difficulty == "easy"
+                || difficulty == "medium"
+                || difficulty == "hard")
             {
                 return;
             }
 
-            Console.WriteLine("Niepoprawny poziom trudności.");
+            Console.WriteLine("Invalid difficulty level.");
         }
     }
 
@@ -107,7 +107,7 @@ class TicTacToe
 
         while (true)
         {
-            Console.Write($"Wybierz pole (1-{board.Length}): ");
+            Console.Write($"Choose a field (1-{board.Length}): ");
 
             string input = Console.ReadLine() ?? "";
 
@@ -120,7 +120,7 @@ class TicTacToe
                 break;
             }
 
-            Console.WriteLine("Niepoprawny ruch. Spróbuj ponownie.");
+            Console.WriteLine("Invalid move. Try again.");
         }
 
         DrawBoard();
@@ -162,7 +162,7 @@ class TicTacToe
             board[bestMove] = ai;
 
             Console.WriteLine(
-                $"AI wybrało pole {bestMove + 1}"
+                $"AI chose field {bestMove + 1}"
             );
 
             DrawBoard();
@@ -171,10 +171,10 @@ class TicTacToe
 
     static int GetMaxDepth()
     {
-        if (difficulty == "latwy")
+        if (difficulty == "easy")
             return 1;
 
-        if (difficulty == "sredni")
+        if (difficulty == "medium")
             return 3;
 
         // Full search is practical for a 3x3 board.
@@ -273,11 +273,11 @@ class TicTacToe
         for (int i = 0; i < boardSize; i++)
         {
             score += EvaluateLine(
-                EnumerableRow(i)
+                GetRow(i)
             );
 
             score += EvaluateLine(
-                EnumerableColumn(i)
+                GetColumn(i)
             );
         }
 
@@ -300,7 +300,7 @@ class TicTacToe
         return score;
     }
 
-    static char[] EnumerableRow(int row)
+    static char[] GetRow(int row)
     {
         char[] result = new char[boardSize];
 
@@ -313,7 +313,7 @@ class TicTacToe
         return result;
     }
 
-    static char[] EnumerableColumn(int column)
+    static char[] GetColumn(int column)
     {
         char[] result = new char[boardSize];
 
@@ -387,8 +387,8 @@ class TicTacToe
         {
             Console.WriteLine(
                 symbol == player
-                    ? "Wygrałeś!"
-                    : "AI wygrało!"
+                    ? "You win!"
+                    : "AI wins!"
             );
 
             return true;
@@ -396,7 +396,7 @@ class TicTacToe
 
         if (IsBoardFull())
         {
-            Console.WriteLine("Remis!");
+            Console.WriteLine("Draw!");
             return true;
         }
 
