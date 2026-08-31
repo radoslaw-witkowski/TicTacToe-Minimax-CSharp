@@ -1,25 +1,48 @@
 # Tic Tac Toe with Minimax (C# / .NET)
 
-Console implementation of the Tic Tac Toe game written in C#.  
-The project includes an AI opponent based on the **Minimax algorithm** with configurable search depth (difficulty levels).
+# Tic Tac Toe with Minimax AI
+
+Console-based Tic Tac Toe game written in C# and .NET.
+
+The project features an AI opponent based on the **Minimax algorithm**, with alpha-beta pruning and multiple difficulty levels. The game supports both classic 3x3 and extended 4x4 boards.
 
 ## Features
 
-- Play against the computer in the console
-- AI using the Minimax algorithm
-- Multiple difficulty levels (by limiting search depth)
-- Support for 3x3 and 4x4 boards
-- Full game logic: win / draw detection, valid moves
-- Clear separation of game logic and user interaction
+- Play against an AI opponent in the console
+- Minimax-based decision making
+- Alpha-beta pruning for improved search performance
+- Three difficulty levels
+- 3x3 and 4x4 board support
+- Input validation
+- Win and draw detection
+- Heuristic board evaluation for larger search spaces
 
 ## Technologies
 
 - C#
-- .NET (console application)
+- .NET 9
+- Minimax algorithm
+- Alpha-beta pruning
 
-## How to run
+## Difficulty Levels
 
-1. Clone the repository or download it as a ZIP:
-   ```bash
-   git clone https://github.com/USERNAME/TicTacToe-Minimax-CSharp.git
+- **Easy** – shallow Minimax search
+- **Medium** – deeper Minimax search
+- **Hard**
+  - full search on a 3x3 board
+  - depth-limited search with heuristic evaluation on a 4x4 board
+
+The depth limit on the 4x4 board prevents the search tree from becoming computationally impractical.
+
+## How to Run
+
+### Requirements
+
+- .NET 9 SDK
+
+Clone the repository:
+
+```bash
+git clone https://github.com/radoslaw-witkowski/TicTacToe-Minimax-CSharp.git
+cd TicTacToe-Minimax-CSharp
 
